@@ -1,0 +1,71 @@
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 350px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .social-btn {
+        font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content:stretch;
+            gap:70px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+            width: 100%;
+    }
+
+    .social-btn i {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    input {
+        width: 92%;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .forgot-password {
+        font-size: 12px;
+    }
+
+    .social-btn {
+        padding: 8px;
+        display: flex;
+            align-items: center;
+            justify-content:stretch;
+            gap:40px;
+           
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+            width: 100%;
+    }
+}
