@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #fafafa;
+}
+
+
+.header
+ {
+    background: #2c3e50;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 35px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+.menu a:hover {
+    width: 100%;
+
+    color: #3498db;
+} 
+
+.banner {
+    height: 450px;
+    background: url('image1.jpg') center/cover;
+    position: relative;
+}
+
+
+
+.text {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.sec {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.text-column {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.text-column h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.text-column p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.video-column {
+    flex: 1;
+}
+
+.video-placeholder {
+   
+    border-radius: 8px;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    background-image: url('tmp.jpg');    
+   
+    
+}
+
+
+.site-footer {
+    background: #2c3e50;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
+.links a:hover {
+    color: #3498db;
+}
+
+
+@media (max-width: 767px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sec {
+        flex-direction: column;
+    }
+
+    .banner {
+        height: 250px;
+    }
+
+    .text-column {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .banner {
+        height: 350px;
+    }
+
+    .text {
+        padding: 30px 20px;
+    }
+
+    .sec {
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu {
+        padding: 0 20px;
+    }
+
+    .text {
+        padding: 50px 20px;
+    }
+}

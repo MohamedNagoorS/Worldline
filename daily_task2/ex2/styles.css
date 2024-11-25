@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f2f5;
+    
+}
+
+header {
+    background:#2c3e50;;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  
+    animation: headerSlide 1s ease-out forwards;
+}
+
+@keyframes headerSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+main {
+    padding: 3rem 2rem;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  
+}
+
+.box {
+   
+    height: 250px;
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+
+.box:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: rotateOnce 1s ;
+    background-color: aquamarine;
+}
+
+@keyframes rotateOnce {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.box h2 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+
+
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-text {
+    animation: bounce 2s ease-in-out infinite;
+    
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+@supports not (animation-name: headerSlide) {
+    header {
+        opacity: 1;
+    }
+}
+
+@supports not (transform: rotate(360deg)) {
+    .box:hover {
+        background-color: #f8f8f8;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 100%;
+    }
+}
