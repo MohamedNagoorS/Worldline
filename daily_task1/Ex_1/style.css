@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.timetable-container {
+  padding: 20px;
+}
+
+.timetable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  table-layout: fixed; 
+}
+
+.timetable th, .timetable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box; 
+  word-wrap: break-word;
+  overflow-wrap: break-word; 
+}
+
+.timetable thead {
+  background-color: #2b5797;
+  color: white;
+}
+
+.timetable thead th {
+  width: 20%; 
+}
+
+.timetable tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.timetable td {
+  position: relative;
+  white-space: normal; 
+}
+
+.hover-info {
+  background-color: #e8f0fe;
+  cursor: pointer;
+}
+
+.hover-info:hover::after {
+  content: attr(data-info);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 0.9em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Remove unnecessary space from the last column */
+.timetable td:last-child {
+  padding-right: 5px;
+}
