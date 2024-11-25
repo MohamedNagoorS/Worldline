@@ -65,7 +65,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Remove unnecessary space from the last column */
+
 .timetable td:last-child {
   padding-right: 5px;
 }
