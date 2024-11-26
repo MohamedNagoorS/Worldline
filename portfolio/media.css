@@ -1,195 +1,204 @@
-@media screen and (max-width: 1400px) {
-  #home {
+/* General Reset for Box Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Responsive Styles */
+  /* 1400px and below */
+  @media screen and (max-width: 1400px) {
+    #home {
       height: 83vh;
       margin-bottom: 6rem;
-  }
-  .about-containers {
+    }
+    .about-containers {
       flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
+    }
+    #contact,
+    #projects {
       height: fit-content;
+    }
   }
-}
-
-/* For screens with a max width of 1200px (Desktops and smaller laptops) */
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
+  
+  /* 1200px and below - Small desktops */
+  @media screen and (max-width: 1200px) {
+    #desktop-nav {
       display: none;
-  }
-  #hamburger-nav {
+    }
+    #hamburger-nav {
       display: flex;
-  }
-  #experience,
-  .experience-details-container {
+    }
+    #experience,
+    .experience-details-container {
       margin-top: 2rem;
-  }
-  #home,
-  .section-container {
+    }
+    #home,
+    .section-container {
       display: block;
-  }
-  section,
-  .section-container {
+    }
+    section,
+    .section-container {
       height: fit-content;
-  }
-  section {
+    }
+    section {
       margin: 0 5%;
-  }
-  .section__pic-container {
+    }
+    .section__pic-container {
       width: 275px;
       height: 275px;
       margin: 0 auto 2rem;
-  }
-  .about-containers {
+    }
+    .about-containers {
       margin-top: 0;
+    }
   }
-}
-
-/* For screens with a max width of 1000px (Medium-sized laptops and smaller tablets) */
-@media screen and (max-width: 1000px) {
-  .section__pic-container {
+  
+  /* 1000px and below - Medium laptops and tablets */
+  @media screen and (max-width: 1000px) {
+    .section__pic-container {
       width: 300px;
       height: 300px;
-  }
-  .about-containers {
+    }
+    .about-containers {
       justify-content: center;
-  }
-  .experience-details-container {
+    }
+    .experience-details-container {
       padding: 1rem;
-  }
-  .project-container {
+    }
+    .project-container {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
-  }
-  .project-box {
+    }
+    .project-box {
       flex: 1 1 30%;
       min-width: 250px;
-  }
-  .about-pic {
+    }
+    .about-pic {
       width: 100%;
       height: auto;
+    }
   }
-}
-
-/* For screens with a max width of 768px (Tablets and smaller laptops) */
-@media screen and (max-width: 768px) {
-  .section__pic-container {
+  
+  /* 768px and below - Tablets */
+  @media screen and (max-width: 768px) {
+    .section__pic-container {
       width: 250px;
       height: 250px;
-  }
-  .btn-container {
+    }
+    .btn-container {
       flex-direction: column;
       gap: 1rem;
-  }
-  .section__text {
+    }
+    .section__text {
       text-align: center;
-  }
-  .about-containers {
+    }
+    .about-containers {
       flex-direction: column;
       align-items: center;
-  }
-  .project-box {
+    }
+    .project-box {
       flex: 1 1 45%;
       min-width: 200px;
-  }
-  .logo {
+    }
+    .logo {
       font-size: 1.5rem;
-  }
-  footer {
+    }
+    footer {
       padding: 1rem;
+    }
   }
-}
-
-/* For screens with a max width of 600px (Mobile devices) */
-@media screen and (max-width: 600px) {
-  #home {
+  
+  /* 600px and below - Mobile devices */
+  @media screen and (max-width: 600px) {
+    #home {
       height: 70vh;
       margin-bottom: 0;
-  }
-  #contact,
-  footer {
+    }
+    #contact,
+    footer {
       height: 40vh;
-  }
-  article {
+    }
+    article {
       font-size: 1rem;
-  }
-  footer nav {
+    }
+    footer nav {
       height: fit-content;
       margin-bottom: 2rem;
-  }
-  .btn-container {
+    }
+    .btn-container {
       flex-direction: column;
-  }
-  .contact-info-container {
+    }
+    .contact-info-container {
       margin: 0;
-  }
-  .experience-sub-title {
+    }
+    .experience-sub-title {
       font-size: 1.25rem;
-  }
-  .logo {
+    }
+    .logo {
       font-size: 1.25rem;
-  }
-  .nav-links {
+    }
+    .nav-links {
       flex-direction: column;
       gap: 0.5rem;
       text-align: center;
-  }
-  .section__pic-container {
+    }
+    .section__pic-container {
       width: 50vw;
       height: auto;
-  }
-  .section__text__p2,
-  .section__text__p1 {
+    }
+    .section__text__p2,
+    .section__text__p1 {
       font-size: 1.25rem;
-  }
-  .title {
+    }
+    .title {
       font-size: 1.75rem;
-  }
-  .text-container {
+    }
+    .text-container {
       text-align: justify;
+    }
+    .icon {
+      width: 40px;
+      height: 40px;
+    }
   }
-  .icon{
-    width: 40px; 
-    height: 40px;
-  }
-}
-
-/* For very small devices (Portrait mobile) */
-@media screen and (max-width: 480px) {
-  .section__pic-container {
+  
+  /* 480px and below - Small mobile devices */
+  @media screen and (max-width: 480px) {
+    .section__pic-container {
       width: 80vw;
       height: 80vw;
-  }
-  .section__pic-container2 {
-    width: 80vw;
-    height: 80vw;
-    
-}
-  .btn-container {
-      flex-direction:column;
-  }
-  .project-box {
+    }
+    .section__pic-container2 {
+      width: 80vw;
+      height: 80vw;
+    }
+    .btn-container {
+      flex-direction: column;
+    }
+    .project-box {
       flex: 1 1 100%;
       min-width: 100%;
-  }
-  .logo {
+    }
+    .logo {
       font-size: 1.2rem;
-  }
-  .title {
+    }
+    .title {
       font-size: 1.5rem;
-  }
-  .experience-sub-title {
+    }
+    .experience-sub-title {
       font-size: 1rem;
-  }
-  .contact-info-container p {
+    }
+    .contact-info-container p {
       font-size: 1rem;
-  }
-  .nav-links li a {
+    }
+    .nav-links li a {
       font-size: 1rem;
+    }
+    .icon {
+      width: 30px;
+      height: 30px;
+    }
   }
-  .icon{
-    width: 30px;
-    height: 30px;
-  }
-}
+  
