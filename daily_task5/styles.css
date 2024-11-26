@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(360deg, #8f95ae 0%, #8438d0 100%);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: 140vh; 
+}
+
+.registration-container {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.form-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.password-strength {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.password-strength-weak { color: #ff4d4d; }
+.password-strength-moderate { color: #ffa500; }
+.password-strength-strong { color: #4caf50; }
+
+#strength-bar {
+    height: 8px;
+    background: #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#strength-indicator {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+#strength-text {
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #4caf50;
+}
+#strength-bar {
+    height: 8px;
+    background: #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#strength-indicator {
+    height: 100%;
+    width: 0; 
+    background-color: red; 
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+#strength-text {
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0;
+    color: red; }
